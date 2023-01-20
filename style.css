@@ -98,5 +98,9 @@ footer{
  .box{
     border: none;
  }
+ footer{
+    width: 100vw;
+    padding-left: 1rem;
+ }
   
 }
